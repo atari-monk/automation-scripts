@@ -5,6 +5,7 @@
 ### Srs
 
 - [Logger](srs/logger.md)
+- [Cli](srs/cli.md)
 
 ### Note
 
