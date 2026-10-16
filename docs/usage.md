@@ -2,22 +2,23 @@
 
 ### Log
 
+#### Bash script with input
+
+```sh
+"$HOME/atari-monk/project/automation-scripts/scripts/log.sh"
+```
+
 #### Py script
 
 args:
 
-- name
-- text
-- blank/-s/-e
-
-use "" for multiple words
-
-```sh
-python3 "/home/atari-monk/atari-monk/project/automation-scripts/src/log.py"
-```
-
-#### Bash script with input
+- positional
+  - name
+  - text
+  - use "" for multiple words
+- flags
+  - blank/-s/-e
 
 ```sh
-/home/atari-monk/atari-monk/project/automation-scripts/scripts/log.sh
+python3 "$HOME/atari-monk/project/automation-scripts/src/log.py"
 ```
