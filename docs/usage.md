@@ -2,30 +2,22 @@
 
 ### Log
 
-One liner
+#### Py script
+
+args:
+
+- name
+- text
+- blank/-s/-e
+
+use "" for multiple words
 
 ```sh
-name="" && text="" && script="/home/atari-monk/atari-monk/project/automation-scripts/src/log.py" && python3 "$script" "$name" "$text"
+python3 "/home/atari-monk/atari-monk/project/automation-scripts/src/log.py"
 ```
 
-Input
+#### Bash script with input
 
 ```sh
-script="/home/atari-monk/atari-monk/project/automation-scripts/src/log.py"
-read -rp "name: " name
-[ -z "$name" ] && echo "name required"
-read -rp "text: " text
-[ -z "$text" ] && echo "text required"
-if [ -n "$name" ] && [ -n "$text" ]; then
-  python3 "$script" "$name" "$text"
-fi
-```
-
-Readable
-
-```sh
-name=""
-text=""
-script="/home/atari-monk/atari-monk/project/automation-scripts/src/log.py"
-python3 "$script" "$name" "$text"
+/home/atari-monk/atari-monk/project/automation-scripts/scripts/log.sh
 ```
