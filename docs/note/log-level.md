@@ -1,8 +1,10 @@
-## What it does
+## Log Level
 
 ```python
 logger.setLevel(logging.DEBUG)
 ```
+
+What it does ?
 
 It tells the logger: _"Process every log message at DEBUG level or higher."_
 

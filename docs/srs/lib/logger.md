@@ -1,6 +1,6 @@
 ## Logger
 
-`lib/logger.py`
+`src/lib/logger.py`
 
 - provide
 

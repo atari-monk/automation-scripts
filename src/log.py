@@ -11,20 +11,23 @@ MARKERS = {
     "end":   "[END]   ",
 }
 
+ALIASES = {"start": ("-s", "--start"), "end": ("-e", "--end")}
 
 def main():
     flags, argv = extract_flags(
         sys.argv[1:],
-        {"start": ("-s", "--start"), "end": ("-e", "--end")},
+        ALIASES,
     )
 
     marker = next((MARKERS[k] for k, v in flags.items() if v), "")
 
     args = require_args(argv, 2, 'Usage: log.py log_name "text" [-s|-e]')
+    log_name = args[0]
+    text = args[1]
 
     logs_dir = Path.home() / "atari-monk/logs"
-    log = get_logger("atari-monk-note", logs_dir / (args[0] + ".log"), LOG_FORMAT)
-    log.info(marker + args[1])
+    log = get_logger("atari-monk-note", logs_dir / (log_name + ".log"), LOG_FORMAT)
+    log.info(marker + text)
 
 
 if __name__ == "__main__":

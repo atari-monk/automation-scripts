@@ -4,12 +4,18 @@
 
 ### Srs
 
-- [Logger](srs/logger.md)
-- [Cli](srs/cli.md)
-- [File Sys](srs/file-sys.md)
+- [Log](srs/log.md)
+
+#### Lib
+
+- [Logger](srs/lib/logger.md)
+- [Cli](srs/lib/cli.md)
+- [File Sys](srs/lib/file-sys.md)
+
+### Prompt
+
+- [Tts](prompt/tts.md)
 
 ### Note
 
-#### Logger
-
-- [Set Level](note/logger/set-level.md)
+- [Log Level](note/log-level.md)

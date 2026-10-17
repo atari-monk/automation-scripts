@@ -1,0 +1,30 @@
+Log.
+
+Source file: src/log.py.
+
+Log format: asctime, followed by the message.
+
+Define key-marker pairs.
+For key start, marker start in square brackets.
+For key end, marker end in square brackets.
+Use upper letters for markers.
+
+Define key aliases pairs.
+For key start, aliases dash s and dash dash start. 
+For key end, aliases dash e and dash dash end.
+
+Use the extract flags helper.
+
+Select a marker for the extracted flag.
+
+Use the require args helper.
+
+Extract the log name and text from the arguments.
+
+Set the path for the logs directory.
+
+Use the get logger helper.
+
+Set the log file name.
+
+Log text with an optional marker.
