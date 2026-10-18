@@ -4,17 +4,16 @@
 
 ### Srs
 
-- [Log](srs/log.md)
+#### Script
+
+- [Log](srs/script/log.md)
+- [Create Project](srs/script/create-project.md)
 
 #### Lib
 
 - [Logger](srs/lib/logger.md)
 - [Cli](srs/lib/cli.md)
-- [File Sys](srs/lib/file-sys.md)
-
-### Prompt
-
-- [Tts](prompt/tts.md)
+- [File System](srs/lib/file-system.md)
 
 ### Note
 

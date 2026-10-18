@@ -1,0 +1,25 @@
+Create Project. Source file, src slash create underscore proj dot py.
+
+Define key-function pairs: tslib maps to create-ts-lib.
+
+Use require args.
+
+Extract project name and template name from arguments.
+
+Set log directory, assuming the directory exists.
+
+Use get logger.
+
+Check if the template argument is on the list.
+
+Log an error and exit if it is not.
+
+Set project directory, assuming the directory exists.
+
+Log information: creating project with the specified name and template.
+
+Use create folder and log to create the project directory.
+
+If it already exists, log a warning and return.
+
+Run the template generator function.

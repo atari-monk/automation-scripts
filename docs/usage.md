@@ -10,10 +10,10 @@
 
 #### Py script
 
-args:
+Args:
 
 - positional
-  - name
+  - log file name (only name, no extension)
   - text
   - use "" for multiple words
 - flags
@@ -21,4 +21,18 @@ args:
 
 ```sh
 python3 "$HOME/atari-monk/project/automation-scripts/src/log.py"
+```
+
+### Create Project
+
+#### Py script
+
+Args:
+
+- positional
+  - project name
+  - project template
+
+```sh
+python3 "$HOME/atari-monk/project/automation-scripts/src/create_proj.py"
 ```
