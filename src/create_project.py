@@ -17,7 +17,7 @@ def main():
     proj_name, template_name, proj_description = args
 
     log_dir = Path.home() / "atari-monk/logs"
-    log = get_logger("atari-monk-create-proj", log_dir / "create-proj.log")
+    log = get_logger("create-project", log_dir / "create-project.log")
 
     if template_name not in TEMPLATES:
         log.error(f"Unknown template: {template_name}. Known: {list(TEMPLATES)}")
