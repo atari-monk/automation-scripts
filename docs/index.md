@@ -7,6 +7,8 @@
 #### Script
 
 - [Log](srs/script/log.md)
+- [Log Input](srs/script/log-input.md)
+- [Yt db](srs/script/yt-db.md)
 - [Create Project](srs/script/create-project.md)
 
 #### Lib

@@ -2,14 +2,6 @@
 
 ### Log
 
-#### Bash script with input
-
-```sh
-"$HOME/atari-monk/project/automation-scripts/scripts/log.sh"
-```
-
-#### Py script
-
 Args:
 
 - positional
@@ -23,9 +15,19 @@ Args:
 python3 "$HOME/atari-monk/project/automation-scripts/src/log.py"
 ```
 
-### Create Project
+with input:
 
-#### Py script
+```sh
+python3 "$HOME/atari-monk/project/automation-scripts/src/log_input.py"
+```
+
+for yt db:
+
+```sh
+python3 "$HOME/atari-monk/project/automation-scripts/src/yt_db.py"
+```
+
+### Create Project
 
 Args:
 
@@ -34,5 +36,5 @@ Args:
   - project template
 
 ```sh
-python3 "$HOME/atari-monk/project/automation-scripts/src/create_proj.py"
+python3 "$HOME/atari-monk/project/automation-scripts/src/create_project.py"
 ```

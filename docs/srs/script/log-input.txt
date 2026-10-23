@@ -1,0 +1,17 @@
+Log input.
+
+Define the Python script path variable. Use the home directory variable.
+
+Set variables using text from user input to collect data.
+
+Make sure all required variables are provided.
+
+Build the arguments.
+
+Name, required.
+
+Text, required.
+
+Flag, optional. Accepted values are blank, minus S, or minus E.
+
+Run the Python script with the arguments.

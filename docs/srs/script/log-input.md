@@ -1,10 +1,15 @@
-## Log script
+## Log input
 
-- define variable holding python script full path with $HOME
+- define python script path variable
+  - use $HOME
 - set variables with text from user input to collect data
-- check required conditions for variables
-- build args form required and add optional if set
+- make sure required variables are provided
+- build args
   - name (required)
   - text (required)
   - flag (blank/-s/-e) (optional)
 - run python script with args
+
+---
+
+[TTS](log-input.txt)

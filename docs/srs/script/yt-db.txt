@@ -1,0 +1,23 @@
+YT-DB.
+
+Define a variable for the Python script path. Use the HOME environment variable.
+
+Set variables using text provided by the user to collect video data.
+
+The ID is the unique video ID from the YouTube URL.
+
+The name is the video name.
+
+The tags are a comma-separated list of tags.
+
+Make sure all required variables are provided.
+
+Build the arguments.
+
+Set the log name to yt-db.log.
+
+Prepare the text by combining the ID, name, and tags.
+
+Separate them with vertical bars.
+
+Run the Python script with the arguments.
