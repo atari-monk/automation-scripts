@@ -3,20 +3,11 @@ from pathlib import Path
 
 from lib.file_system import copy_file_and_log, create_file_and_log, create_folder_and_log
 from lib.json_helper import set_package_meta
+from lib.project_files import create_docs, create_prompt
 
 
 BASE_PATH = Path("/home/atari-monk/atari-monk/project")
 TYPESCRIPT_LIBRARY_PATH = BASE_PATH / "typescript-library"
-
-
-def create_docs(project_path: Path, log: Logger):
-    create_folder_and_log(project_path, "docs", log)
-    create_file_and_log(project_path / "docs", "_config.yml", "title: ", log)
-
-
-def create_prompt(project_path: Path, log: Logger):
-    create_folder_and_log(project_path, "prompt", log)
-    create_file_and_log(project_path / "prompt", "prompt.md", "", log)
 
 
 def create_src(project_path: Path, log: Logger):
@@ -25,13 +16,13 @@ def create_src(project_path: Path, log: Logger):
 
 
 def create_configs(project_path: Path, name: str, description: str, log: Logger):
-    for file_name in (
+    for file_name in [
         ".gitignore",
         "package.json",
         "README.md",
         "tsconfig.json",
-        "tsup.config.ts",
-    ):
+        "tsup.config.ts"
+    ]:
         copy_file_and_log(
             TYPESCRIPT_LIBRARY_PATH / file_name,
             project_path / file_name,

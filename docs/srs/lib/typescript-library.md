@@ -2,29 +2,15 @@
 
 `lib/typescript_library.py`
 
-### docs
-
-- create helper `create_docs`
-  - use `create_folder` to create
-    - `docs`
-  - use `create_file` to create
-    - `\_config.yml`
-
-### prompt
-
-- create helper `create_prompt`
-- use `create_folder` to create
-  - `prompt`
-- use `create_file` to create
-  - `prompt.md`
+- [Project Files](project-files.md)
 
 ### src
 
 - create helper `create_src`
-- use `create_folder` to create
-  - `src`
-- use `create_file` to create
-  - `index.ts`
+  - use `create_folder` to create
+    - `src`
+  - use `create_file` to create
+    - `index.ts`
 
 ### config files
 

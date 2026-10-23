@@ -1,19 +1,23 @@
+from logging import Logger
 import sys
 from pathlib import Path
+from typing import Callable
 
 from lib.logger import get_logger
 from lib.cli import require_args
 from lib.file_system import create_folder_and_log
 from lib.typescript_library import create_ts_lib
+from lib.typescript_vite_app import create_ts_vite_app
 
 
-TEMPLATES = {
+TEMPLATES : dict[str, Callable[[Path, str, str, Logger], None]] = {
     "tslib": create_ts_lib,
+    "tsviteapp": create_ts_vite_app
 }
 
 
 def main():
-    args = require_args(sys.argv[1:], 2, 'Usage: create_proj.py proj_name template_name proj_description')
+    args = require_args(sys.argv[1:], 2, 'Usage: create_proj.py proj_name template_name (tslib, tsviteapp) proj_description')
     proj_name, template_name, proj_description = args
 
     log_dir = Path.home() / "atari-monk/logs"

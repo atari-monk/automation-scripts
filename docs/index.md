@@ -17,7 +17,9 @@
 - [Cli](srs/lib/cli.md)
 - [File System](srs/lib/file-system.md)
 - [Json Helper](srs/lib/json-helper.md)
+- [Project Files](srs/lib/project-files.md)
 - [Typescript Library](srs/lib/typescript-library.md)
+- [Typescript Vite App](srs/lib/typescript_vite_app.md)
 
 ### Note
 
