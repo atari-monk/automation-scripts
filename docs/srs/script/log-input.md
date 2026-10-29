@@ -18,4 +18,4 @@
 
 ---
 
-[tts](log-input.txt)
+[tts](https://raw.githubusercontent.com/atari-monk/automation-scripts/main/docs/srs/script/log-input.txt)

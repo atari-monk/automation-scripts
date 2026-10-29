@@ -1,4 +1,4 @@
-## Create Project
+## create project
 
 `src/create_proj.py`
 
@@ -18,4 +18,4 @@
 
 ---
 
-[TTS](create-project.txt)
+[tts](https://raw.githubusercontent.com/atari-monk/automation-scripts/main/docs/srs/script/create-project.txt)

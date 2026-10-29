@@ -26,4 +26,4 @@
 
 ---
 
-[tts](log.txt)
+[tts](https://raw.githubusercontent.com/atari-monk/automation-scripts/main/docs/srs/script/log.txt)

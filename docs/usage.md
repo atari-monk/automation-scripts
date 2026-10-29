@@ -5,7 +5,7 @@
 Args:
 
 - positional
-  - log file name (only name, no extension)
+  - path - folder/log_file_name (only name, no extension)
   - text
   - use "" for multiple words
 - flags
