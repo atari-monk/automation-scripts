@@ -1,5 +1,7 @@
 YT-DB.
 
+Core:
+
 Define a variable for the Python script path. Use the HOME environment variable.
 
 Set variables using text provided by the user to collect video data.
@@ -21,3 +23,13 @@ Prepare the text by combining the ID, name, and tags.
 Separate them with vertical bars.
 
 Run the Python script with the arguments.
+
+Features:
+
+Folders was introduced, log_name must be now log_path with folder/log_name values.
+
+Not hard coded string.
+
+Folder and log name is variable.
+
+Input for path is needed.

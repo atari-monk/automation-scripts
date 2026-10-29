@@ -1,6 +1,8 @@
-## Log
+## log
 
 `src/log.py`
+
+### core
 
 - [x] log format: "%(asctime)s %(message)s"
 - [x] define key - marker pairs:
@@ -18,6 +20,10 @@
   - set log file name
 - [x] log text with optional marker
 
+### features
+
+- [x] folders was introduced, log_name must be now log_path with `folder/log_name` values
+
 ---
 
-[TTS](log.txt)
+[tts](log.txt)

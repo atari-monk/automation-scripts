@@ -1,15 +1,21 @@
-## Log input
+## log input
 
-- define python script path variable
+### core
+
+- [x] define python script path variable
   - use $HOME
-- set variables with text from user input to collect data
-- make sure required variables are provided
-- build args
+- [x] set variables with text from user input to collect data
+- [x] make sure required variables are provided
+- [x] build args
   - name (required)
   - text (required)
   - flag (blank/-s/-e) (optional)
-- run python script with args
+- [x] run python script with args
+
+### features
+
+- [] folders was introduced, log_name must be now log_path with `folder/log_name` values
 
 ---
 
-[TTS](log-input.txt)
+[tts](log-input.txt)

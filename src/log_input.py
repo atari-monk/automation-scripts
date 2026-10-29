@@ -6,7 +6,7 @@ from typing import List, Optional
 
 @dataclass
 class LogData:
-    name: str
+    path: str
     text: str
     flag: Optional[str] = None
 
@@ -17,15 +17,15 @@ def get_script_path() -> str:
 
 
 def prompt_log_data() -> LogData:
-    name = input("name: ").strip()
+    path = input("path (folder/log_name): ").strip()
     text = input("text: ").strip()
     flag = input("flag (blank/-s/-e, optional): ").strip()
-    return LogData(name=name, text=text, flag=flag or None)
+    return LogData(path=path, text=text, flag=flag or None)
 
 
 def validate_log_data(data: LogData) -> None:
-    if not data.name:
-        raise ValueError("name required")
+    if not data.path:
+        raise ValueError("path required")
     if not data.text:
         raise ValueError("text required")
     if data.flag and data.flag not in ("-s", "-e"):
@@ -33,7 +33,7 @@ def validate_log_data(data: LogData) -> None:
 
 
 def build_args(script: str, data: LogData) -> List[str]:
-    args = [script, data.name, data.text]
+    args = [script, data.path, data.text]
     if data.flag:
         args.append(data.flag)
     return args
@@ -49,7 +49,7 @@ def main() -> None:
     try:
         validate_log_data(data)
     except ValueError as e:
-        raise SystemExit(f"{e}")
+        raise SystemExit(str(e))
     args = build_args(script, data)
     run_script(args)
 

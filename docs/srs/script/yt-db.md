@@ -1,19 +1,28 @@
-## Yt-db
+## yt-db
 
-- define python script path variable
+### core
+
+- [x] define python script path variable
   - use $HOME
-- set variables with text from user input to collect video data:
+- [x] set variables with text from user input to collect video data:
   - id (unique vodeo id from yt url)
   - name
   - tags (comma separeted list)
-- make sure required variables are provided
-- build args
+- [x] make sure required variables are provided
+- [x] build args
   - log name: "yt-db.log"
   - text
   - prepare text by combining id, name, tags
   - separate them with vertical bars
-- run python script with args
+- [x] run python script with args
+
+### features
+
+- [] folders was introduced, log_name must be now log_path with `folder/log_name` values
+  - not hard coded string
+  - folder and log name is variable
+  - input for path is needed
 
 ---
 
-[TTS](yt-db.txt)
+[tts](yt-db.txt)

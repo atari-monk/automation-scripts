@@ -1,5 +1,7 @@
 Log input.
 
+Core:
+
 Define the Python script path variable. Use the home directory variable.
 
 Set variables using text from user input to collect data.
@@ -15,3 +17,7 @@ Text, required.
 Flag, optional. Accepted values are blank, minus S, or minus E.
 
 Run the Python script with the arguments.
+
+Features:
+
+Folders was introduced, log_name must be now log_path with folder/log_name values.

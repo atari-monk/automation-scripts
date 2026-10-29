@@ -2,6 +2,8 @@ Log.
 
 Source file: src/log.py.
 
+Core:
+
 Log format: asctime, followed by the message.
 
 Define key-marker pairs.
@@ -28,3 +30,7 @@ Use the get logger helper.
 Set the log file name.
 
 Log text with an optional marker.
+
+Features:
+
+Folders was introduced, log_name must be now log_path with folder/log_name values.
