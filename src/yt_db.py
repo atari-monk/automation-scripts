@@ -37,7 +37,7 @@ def build_text(data: VideoData) -> str:
 
 
 def build_args(script: str, text: str) -> List[str]:
-    return [script, "yt-db.log", text]
+    return [script, "yt-db", text]
 
 
 def run_script(args: List[str]) -> None:
