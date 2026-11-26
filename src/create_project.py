@@ -27,7 +27,7 @@ TEMPLATES : dict[str, ProjectTemplate] = {
 
 
 def main():
-    args = require_args(sys.argv[1:], 2, 'Usage: create_proj.py proj_name template_name (tslib, tsviteapp) proj_description')
+    args = require_args(sys.argv[1:], 2, 'Usage: create_proj.py proj_name template_name (tslib, tsviteapp, gameapp) proj_description')
     proj_name, template_name, proj_description = args
 
     log_dir = Path.home() / "atari-monk/logs"
